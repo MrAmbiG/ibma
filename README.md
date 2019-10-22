@@ -1,2 +1,0 @@
-# ibma
-serverless, faas, automation
