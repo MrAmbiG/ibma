@@ -20,7 +20,7 @@ srt - static run time
 
 ## Usage
 1. Mount the payload directory to the root directory of a python 3.7.x container
-2. ibma.py should run at startup of the python container [may be trigger with entrypoing.sh]
+2. ibma.py should run at startup of the python container [may be trigger with entrypoint.sh]
 3. post your input json to <server>/srt/py37
 4. input json will be copied to input directory and the output will be to the output directory
 5. if you want the output to be also be available in the database and deleted from the output directory then do an empty post to <server>/srt/py37/id/output
