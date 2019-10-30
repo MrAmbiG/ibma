@@ -2,7 +2,8 @@ import os
 import json
 from pathlib import Path
 from functions.generic import *
-import time, datetime
+import time
+import datetime
 
 INPUT_DIR = os.path.abspath(os.path.join(
     os.path.dirname(__file__), 'input'))
@@ -31,10 +32,11 @@ def get_input_files():
     input_files = [os.path.join(INPUT_DIR, file) for file in files]
     return input_files
 
+
 def looper():
     input_files = get_input_files()
     seconds = 2  # sleep timer
-    while 1:        
+    while 1:
         for input_jsonfile in input_files:
             try:
                 data = runner(input_jsonfile)
